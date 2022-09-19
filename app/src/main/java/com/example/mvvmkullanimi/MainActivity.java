@@ -42,10 +42,10 @@ public class MainActivity extends AppCompatActivity {
                 String alinanSayi1 = editTextNumber1.getText().toString();
                 String alinanSayi2 = editTextNumber2.getText().toString();
 
-                int sayi1 = Integer.parseInt(alinanSayi1);
-                int sayi2 = Integer.parseInt(alinanSayi2);
+                long sayi1 = Long.parseLong(alinanSayi1);
+                long sayi2 = Long.parseLong(alinanSayi2);
 
-                int sonuc = sayi1 + sayi2;
+                long sonuc = sayi1 + sayi2;
 
                 textViewResultScreen.setText(String.valueOf(sonuc));
             }
@@ -95,7 +95,7 @@ public class MainActivity extends AppCompatActivity {
                 int sayi1 = Integer.parseInt(alinanSayi1);
                 int sayi2 = Integer.parseInt(alinanSayi2);
 
-                int sonuc = sayi1 / sayi2;
+                float sonuc = (float)sayi1 / sayi2;
 
                 textViewResultScreen.setText(String.valueOf(sonuc));
             }
